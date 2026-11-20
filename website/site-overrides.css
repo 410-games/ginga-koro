@@ -611,13 +611,13 @@ main h2 .heading-accent {
 
 .prism-sample {
   display: grid;
-  gap: 12px;
+  gap: 1.3em;
   text-align: center;
-  font: 16px/1.5 "Ginga Prism", var(--mono);
+  font: clamp(12px, 1.3vw, 16px)/1.3 "Ginga Prism", var(--mono);
 }
 
 .prism-sample span:first-child {
-  font-size: 24px;
+  font-size: clamp(20px, 2vw, 24px);
 }
 
 .font-toggle {
