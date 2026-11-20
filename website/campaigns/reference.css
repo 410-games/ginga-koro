@@ -1,0 +1,440 @@
+.reference-page {
+  padding-bottom: 72px;
+}
+
+.reference-back {
+  color: var(--cyan);
+  font-size: 14px;
+}
+
+.reference-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 31%);
+  align-items: center;
+  gap: clamp(24px, 6vw, 72px);
+  padding-block: clamp(40px, 8vw, 96px);
+  border-bottom: 1px solid var(--line);
+}
+
+.reference-hero h1 {
+  margin: 0 0 24px;
+  font-size: clamp(36px, 6vw, 74px);
+  line-height: 1.05;
+  letter-spacing: -.045em;
+}
+
+.reference-hero > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  image-rendering: pixelated;
+}
+
+.reference-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.reference-nav a {
+  padding: 5px 10px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--panel);
+  font-size: 13px;
+}
+
+.reference-nav a:hover,
+.reference-back:hover {
+  color: var(--cyan);
+  text-decoration: underline;
+}
+
+.reference-section {
+  padding-top: clamp(40px, 6vw, 76px);
+}
+
+.reference-section h2 {
+  margin: 0 0 18px;
+  font-size: clamp(26px, 4vw, 42px);
+  line-height: 1.15;
+  letter-spacing: -.035em;
+}
+
+.reference-ship,
+.reference-card,
+.reference-music figure {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.reference-ship + .reference-ship {
+  margin-top: 16px;
+}
+
+.reference-ship {
+  padding: 18px;
+}
+
+.reference-ship .eyebrow {
+  margin-bottom: 8px;
+}
+
+.reference-ship h3,
+.reference-card h3 {
+  margin: 0;
+  font-size: clamp(17px, 2vw, 24px);
+  line-height: 1.2;
+}
+
+.reference-ship h3 span {
+  color: var(--muted);
+}
+
+.classic-ship-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 16px 0 0;
+}
+
+.classic-ship-stats div {
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #080d19;
+}
+
+.classic-ship-stats dt {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.classic-ship-stats dd {
+  margin: 5px 0 0;
+  color: var(--text);
+  font-size: clamp(17px, 2vw, 23px);
+  font-weight: 700;
+}
+
+.reference-note {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.reference-ship-art,
+.reference-art-pair,
+.reference-stages,
+.reference-actors {
+  display: grid;
+  gap: 12px;
+}
+
+.reference-ship-art {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 16px;
+}
+
+.reference-stages,
+.reference-art-pair {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.reference-actors {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.reference-card header,
+.reference-card details {
+  padding: 14px;
+}
+
+.reference-card header p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.reference-card header .reference-role {
+  color: var(--cyan);
+}
+
+.reference-card details {
+  border-top: 1px solid var(--line);
+}
+
+.reference-card summary {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.reference-card details .reference-art-pair {
+  margin-top: 12px;
+}
+
+.reference-card > .reference-art-pair {
+  padding: 0 12px 12px;
+}
+
+.reference-page figure {
+  margin: 0;
+  background: #080d19;
+}
+
+.reference-page figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.reference-page figure figcaption {
+  padding: 8px 10px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.reference-art-pair figure,
+.reference-ship-art figure {
+  display: grid;
+  align-content: start;
+}
+
+.reference-art-pair figure img,
+.reference-ship-art figure img {
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.reference-page .reference-sprite img {
+  width: 100%;
+  padding: 22%;
+  image-rendering: pixelated;
+}
+
+.reference-capture img,
+.reference-map img {
+  image-rendering: pixelated;
+}
+
+.reference-pending {
+  display: grid;
+  min-height: 126px;
+  place-items: center;
+  margin: 0;
+  background: #080d19;
+  color: var(--muted);
+}
+
+.reference-music figure {
+  max-width: 520px;
+}
+
+@media (max-width: 900px) {
+  .reference-actors {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .reference-hero,
+  .reference-stages {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .reference-hero > img {
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 420px) {
+  .reference-actors {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.campaign-reference {
+  --reference-accent: var(--cyan);
+}
+
+.campaign-reference .topbar .reference-toplinks {
+  display: flex;
+  gap: clamp(12px, 3vw, 28px);
+}
+
+.reference-toplinks .reference-back {
+  font-size: clamp(12px, 2vw, 14px);
+}
+
+.reference-hero {
+  background: radial-gradient(ellipse at 78% 50%, color-mix(in srgb, var(--reference-accent) 15%, transparent), transparent 70%);
+  grid-template-columns: minmax(0, 1fr) minmax(230px, 42%);
+}
+
+.reference-hero .eyebrow,
+.reference-stage-nav a,
+.reference-card summary {
+  color: var(--reference-accent);
+}
+
+.reference-hero > img,
+.reference-stage {
+  border-color: color-mix(in srgb, var(--reference-accent) 36%, var(--line));
+}
+
+.reference-stage-nav {
+  margin-bottom: 18px;
+}
+
+.reference-stage:target {
+  outline: 2px solid var(--reference-accent);
+  outline-offset: 2px;
+}
+
+.reference-ship-art {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.reference-native img {
+  image-rendering: pixelated;
+}
+
+.reference-page .shared-sprite img {
+  width: min(100%, 120px);
+  max-height: 120px;
+  object-fit: contain;
+  margin-inline: auto;
+  padding: 18px;
+}
+
+.shared-hero {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.shared-hero p:not(.eyebrow) {
+  color: var(--muted);
+}
+
+.interface-page-link {
+  margin-block: 14px 18px;
+}
+
+.interface-cards {
+  display: grid;
+  gap: 18px;
+}
+
+.interface-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.interface-card > header {
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.interface-card > header h3 {
+  margin: 0;
+  font-size: clamp(19px, 2.4vw, 28px);
+}
+
+.interface-card > header p {
+  max-width: 72ch;
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+.interface-card-art {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: 12px;
+  padding: 14px;
+}
+
+.interface-card-art figure {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.interface-card-art .reference-capture img {
+  image-rendering: pixelated;
+}
+
+.campaign-archive-link {
+  margin-bottom: 0;
+}
+
+@media (max-width: 680px) {
+  .reference-hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .reference-hero > img {
+    max-width: 100%;
+  }
+
+  .reference-ship-art {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .classic-ship-stats {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+
+.reference-music .music-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.music-preview-button {
+  display: inline-grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  padding: 0 0 0 2px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: #080d19;
+  color: var(--cyan);
+  font: inherit;
+  font-size: 13px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.music-preview-button:hover,
+.music-preview-button[aria-pressed="true"] {
+  border-color: var(--cyan);
+  color: var(--text);
+}
+
+.music-preview-button:focus-visible {
+  outline: 3px solid var(--cyan);
+  outline-offset: 3px;
+}
+
+.music-preview-note {
+  max-width: 520px;
+}
+
+.music-preview-status {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.music-preview-status[hidden] {
+  display: none;
+}

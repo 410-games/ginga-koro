@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d19">
+  <meta name="description" content="Ginga Koro is an original Game Boy Advance shoot-'em-up in development by 4.10 Games.">
+  <title>Ginga Koro — 4.10 Games</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="site-overrides.css">
+  <script src="font-toggle.js" defer></script>
+</head>
+<body>
+  <header class="topbar promo-topbar">
+    <a class="brand" href="#top" aria-label="Ginga Koro home">
+      <img src="assets/4-10-games-logo.png" alt="4.10 Games" width="108" height="43">
+    </a>
+    <nav class="reference-toplinks" aria-label="Page sections">
+      <a class="reference-back" href="#gameplay">Gameplay</a><a class="reference-back" href="#campaigns">Campaigns</a><a class="reference-back" href="#ships">Ships</a><a class="reference-back" href="#weapons">Weapons</a><a class="reference-back" href="#craft">The craft</a>
+    </nav>
+    <div class="promo-header-end">
+      <a class="status status-link" href="development/index.html" aria-label="Read the development timeline"><i></i> IN DEVELOPMENT</a>
+      <button class="font-toggle" type="button" role="switch" aria-checked="false" hidden>Ginga Prism font<span class="font-toggle-track" aria-hidden="true"></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <figure class="studio-brand-lockup"><img src="assets/4-10-games-precision-grid.png" width="2600" height="1100" alt="4.10 Games"></figure>
+        <img class="hero-japanese-wordmark" src="assets/ginga-koro-japanese-wordmark.png" width="2172" height="724" alt="銀河航路, the Japanese title of Ginga Koro">
+        <h1>Ginga <em>Koro</em></h1>
+        <p class="hero-lede">A new, original shoot-'em-up for Game Boy Advance. Fly through neon cities, coastal defences and deep space. Weave through enemy fire, build your firepower and find an opening.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#gameplay">See gameplay <span aria-hidden="true">↓</span></a>
+          <a class="button ghost" href="#campaigns">Explore the campaigns</a>
+        </div>
+      </div>
+      <figure class="hero-screen">
+        <video controls playsinline preload="metadata" poster="assets/mgba-crimson-nebula-lyra-late-wave.png" width="240" height="160" aria-label="Five-second gameplay clip from Neon Overdrive: Hyperplay City">
+          <source src="assets/videos/mgba-neon-overdrive-hyperplay-city-volt.mp4" type="video/mp4">
+          Your browser does not support embedded video. <a href="assets/videos/mgba-neon-overdrive-hyperplay-city-volt.mp4">Open the gameplay clip.</a>
+        </video>
+        <figcaption>NEON OVERDRIVE · HYPERPLAY CITY · VOLT</figcaption>
+      </figure>
+      <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+    </section>
+
+    <section class="section wrap" id="gameplay">
+      <div class="section-heading"><p class="eyebrow">The loop</p><h2>Read the field. <span class="heading-accent">Find your line through it.</span></h2><p><strong>Ginga Koro</strong> is built around direct, readable action. Move through enemy fire, build your weapon, and choose the right moment to spend a bomb or a Special.</p></div>
+      <div class="gameplay-grid">
+        <article class="feature">
+          <figure class="game-frame">
+            <img src="assets/mgba-sunken-citadel-lyra-crossfire.png" width="240" height="160" loading="lazy" alt="Lyra fires through magenta crossfire as enemy ships close in above the ruins">
+            <figcaption>COSMIC CONVERGENCE · SUNKEN CITADEL</figcaption>
+          </figure>
+          <div class="feature-copy">
+            <h3>Keep moving</h3>
+            <p>Read the incoming fire and look for a gap. In <strong>Sunken Citadel</strong>, enemy ships close in while volleys cross the ruins.</p>
+          </div>
+        </article>
+        <article class="feature">
+          <figure class="game-frame">
+            <img src="assets/mgba-rail-burst.png" width="240" height="160" loading="lazy" alt="Shrike fires a charged blue Rail Burst up the causeway">
+            <figcaption>IRON MONSOON · SURF LINE</figcaption>
+          </figure>
+          <div class="feature-copy">
+            <h3>Build your firepower</h3>
+            <p>Collect weapon power-ups. Hold and release fire on compatible ships to launch a charged attack like <strong>Shrike</strong>’s <strong>Rail Burst</strong>.</p>
+          </div>
+        </article>
+        <article class="feature">
+          <figure class="game-frame">
+            <img src="assets/mgba-hyperplay-city-spread-storm.png" width="240" height="160" loading="lazy" alt="Volt fires a fan of cyan Spread Storm shots through incoming enemy fire">
+            <figcaption>NEON OVERDRIVE · HYPERPLAY CITY</figcaption>
+          </figure>
+          <div class="feature-copy">
+            <h3>Pick your moment</h3>
+            <p>Use a bomb to clear incoming fire or turn a wave around with a Special like <strong>Volt</strong>’s <strong>Spread Storm</strong>. The homing missile add-on fires automatically until you lose a life.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="enemy-section" aria-labelledby="opposition-title">
+      <div class="wrap enemy-layout">
+        <figure class="game-frame showcase-frame boss-frame">
+          <img src="assets/mgba-glowspin-park-volt-vortex.png" width="240" height="160" loading="lazy" alt="Volt Vortex sends an expanding ring of magenta bullets across the Ride Core arena">
+          <figcaption>VOLT VORTEX · GLOWSPIN PARK</figcaption>
+        </figure>
+        <div class="enemy-copy">
+          <p class="eyebrow">The opposition</p>
+          <h2 id="opposition-title">Learn their patterns. <span class="heading-accent">Then find an opening.</span></h2>
+          <p>Fast interceptors cut across your path, formations close off escape routes, and armoured craft demand sustained fire. Bosses change their attacks as the fight progresses. In <strong>Glowspin Park</strong>, <strong>Volt Vortex</strong> sends expanding rings across a neon arena.</p>
+        </div>
+      </div>
+      <div class="wrap enemy-gallery" aria-label="Enemy artwork examples">
+        <figure><img src="assets/enemy-red-ingame.png" loading="lazy" alt="Red Reaver in the Gallery layout"><figcaption><span class="mono">GALLERY ART</span>RED REAVER</figcaption></figure>
+        <figure><img src="assets/enemy-violet-ingame.png" loading="lazy" alt="Violet Hunter in the Gallery layout"><figcaption><span class="mono">GALLERY ART</span>VIOLET HUNTER</figcaption></figure>
+        <figure><img src="assets/enemy-cyan-ingame.png" loading="lazy" alt="Cyan Sentinel in the Gallery layout"><figcaption><span class="mono">GALLERY ART</span>CYAN SENTINEL</figcaption></figure>
+        <figure class="enemy-reference"><img src="assets/red-reaver-hero.png" loading="lazy" alt="Red Reaver high-resolution reference illustration"><figcaption><span class="mono">HIGH-RES REFERENCE</span>RED REAVER</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="campaign-section" id="campaigns">
+      <div class="wrap">
+        <div class="section-heading campaign-heading">
+          <p class="eyebrow">The campaigns</p>
+          <h2>From crystal caverns <span class="heading-accent">to cartridge causeways.</span></h2>
+          <p>Fly between the radar dishes of <strong>Dead Air</strong>, through the crystal formations of <strong>Prismatic Veil</strong> and over the brass machinery of <strong>Clockwork Empire</strong>. Each campaign has its own stages, enemy roster and bosses.</p>
+        </div>
+        <div class="campaign-captures" aria-label="Campaign gameplay">
+          <figure class="game-frame showcase-frame stage-frame" style="--frame-accent: #ec8de3"><img src="assets/stages/cosmic-convergence/celestial-graveyard.png" alt="Celestial Graveyard gameplay in Cosmic Convergence" width="240" height="160" loading="lazy"><figcaption><span><a href="campaigns/cosmic-convergence/index.html">COSMIC CONVERGENCE</a></span><strong>Celestial Graveyard</strong></figcaption></figure>
+          <figure class="game-frame showcase-frame stage-frame" style="--frame-accent: #8ddcff"><img src="assets/mgba-prismatic-veil-vesper-plasma-wave.png" alt="Prismatic Veil gameplay in Strange Horizons" width="240" height="160" loading="lazy"><figcaption><span><a href="campaigns/strange-horizons/index.html">STRANGE HORIZONS</a></span><strong>Prismatic Veil</strong></figcaption></figure>
+          <figure class="game-frame showcase-frame stage-frame" style="--frame-accent: #c69cff"><img src="assets/stages/neon-overdrive/spectral-nexus.png" alt="Spectral Nexus gameplay in Neon Overdrive" width="240" height="160" loading="lazy"><figcaption><span><a href="campaigns/neon-overdrive/index.html">NEON OVERDRIVE</a></span><strong>Spectral Nexus</strong></figcaption></figure>
+          <figure class="game-frame showcase-frame stage-frame" style="--frame-accent: #f0ca89"><img src="assets/mgba-brasswind-dockyard.png" alt="Brasswind Dockyard gameplay in Clockwork Empire" width="240" height="160" loading="lazy"><figcaption><span><a href="campaigns/clockwork-empire/index.html">CLOCKWORK EMPIRE</a></span><strong>Brasswind Dockyard</strong></figcaption></figure>
+          <figure class="game-frame showcase-frame stage-frame" style="--frame-accent: #e5b6ed"><img src="assets/mgba-cartridge-causeway-vector.png" alt="Cartridge Causeway gameplay in Console Wars" width="240" height="160" loading="lazy"><figcaption><span><a href="campaigns/console-wars/index.html">CONSOLE WARS</a></span><strong>Cartridge Causeway</strong></figcaption></figure>
+          <figure class="game-frame showcase-frame stage-frame" style="--frame-accent: #8bdac7"><img src="assets/mgba-dead-air-classified-crossfire.png" alt="Dead Air gameplay in Veiled Contact" width="240" height="160" loading="lazy"><figcaption><span><a href="campaigns/veiled-contact/index.html">VEILED CONTACT</a></span><strong>Dead Air</strong></figcaption></figure>
+          <figure class="game-frame showcase-frame stage-frame" style="--frame-accent: #e5c48e"><img src="assets/stages/iron-monsoon/green-vein.png" alt="Green Vein gameplay in Iron Monsoon" width="240" height="160" loading="lazy"><figcaption><span><a href="campaigns/iron-monsoon/index.html">IRON MONSOON</a></span><strong>Green Vein</strong></figcaption></figure>
+          <figure class="game-frame showcase-frame stage-frame" style="--frame-accent: #a4acff"><img src="assets/mgba-danmaku.png" alt="Danmaku gameplay in Playground" width="240" height="160" loading="lazy"><figcaption><span><a href="campaigns/playground/index.html">PLAYGROUND</a></span><strong>DANMAKU</strong></figcaption></figure>
+        </div>
+        <h3 class="campaign-roster-title">Explore the roster</h3>
+        <div class="campaign-grid" aria-label="Campaign selection artwork">
+          <article class="campaign-card"><div class="campaign-art"><img loading="lazy" width="256" height="256" src="assets/campaign-cosmic.png" alt="Cosmic Convergence campaign selection artwork"></div><div class="campaign-info"><span class="mono">DEEP SPACE</span><h3><a href="campaigns/cosmic-convergence/index.html">COSMIC CONVERGENCE</a></h3><p>Open-space combat, from <strong>Neon Frontier</strong> to <strong>Final Convergence</strong>.</p></div></article>
+          <article class="campaign-card"><div class="campaign-art"><img loading="lazy" width="256" height="256" src="assets/campaign-strange.png" alt="Strange Horizons campaign selection artwork"></div><div class="campaign-info"><span class="mono">THE UNKNOWN</span><h3><a href="campaigns/strange-horizons/index.html">STRANGE HORIZONS</a></h3><p>Fly across remote, shifting environments and unfamiliar frontiers.</p></div></article>
+          <article class="campaign-card"><div class="campaign-art"><img loading="lazy" width="256" height="256" src="assets/campaign-neon.png" alt="Neon Overdrive campaign selection artwork"></div><div class="campaign-info"><span class="mono">ARCADE AFTER DARK</span><h3><a href="campaigns/neon-overdrive/index.html">NEON OVERDRIVE</a></h3><p>Fly through neon streets and amusement parks lit by arcade signs.</p></div></article>
+          <article class="campaign-card"><div class="campaign-art"><img loading="lazy" width="256" height="256" src="assets/campaign-clockwork.png" alt="Clockwork Empire campaign selection artwork"></div><div class="campaign-info"><span class="mono">MECHANICAL WORLDS</span><h3><a href="campaigns/clockwork-empire/index.html">CLOCKWORK EMPIRE</a></h3><p>Thread through brass dockyards, mechanical estates and deep industrial shafts.</p></div></article>
+          <article class="campaign-card"><div class="campaign-art"><img loading="lazy" width="256" height="256" src="assets/campaign-console.png" alt="Console Wars campaign selection artwork"></div><div class="campaign-info"><span class="mono">RETRO HARDWARE</span><h3><a href="campaigns/console-wars/index.html">CONSOLE WARS</a></h3><p>Fly over pixel art inspired by different eras of home and arcade hardware.</p></div></article>
+          <article class="campaign-card"><div class="campaign-art"><img loading="lazy" width="256" height="256" src="assets/campaign-veiled.png" alt="Veiled Contact campaign selection artwork"></div><div class="campaign-info"><span class="mono">SIGNALS &amp; SHADOWS</span><h3><a href="campaigns/veiled-contact/index.html">VEILED CONTACT</a></h3><p>Fly through surveillance stations and shadowed machinery.</p></div></article>
+          <article class="campaign-card"><div class="campaign-art"><img loading="lazy" width="256" height="256" src="assets/campaign-iron.png" alt="Iron Monsoon campaign selection artwork"></div><div class="campaign-info"><span class="mono">INDUSTRIAL WARFARE</span><h3><a href="campaigns/iron-monsoon/index.html">IRON MONSOON</a></h3><p>Fly over coastal roads, rail lines and industrial fortifications.</p></div></article>
+          <article class="campaign-card playground-card"><div class="campaign-art"><img loading="lazy" width="256" height="256" src="assets/campaign-playground.png" alt="Playground campaign selection artwork"></div><div class="campaign-info"><span class="mono">MODES &amp; EXPERIMENTS</span><h3><a href="campaigns/playground/index.html">PLAYGROUND</a></h3><p>Try <strong>Danmaku</strong>’s bullet curtains and the descending enemy formations of <strong>Invaders Must Die!</strong></p></div></article>
+        </div>
+        <section class="campaign-shared-preview" aria-labelledby="shared-preview-title">
+          <div class="section-heading">
+            <h2 id="shared-preview-title">Type and <span class="heading-accent">music</span>.</h2>
+          </div>
+          <div class="shared-preview-grid">
+            <figure>
+              <div class="shared-preview-image prism-preview">
+                <div class="prism-sample"><span>Ginga Koro</span><span>Stage Clear</span><span>0123456789 !?</span></div>
+              </div>
+              <figcaption><strong>Ginga Prism</strong> is the custom pixel font used in the game’s menus and HUD.</figcaption>
+            </figure>
+            <figure>
+              <div class="shared-preview-image"><img src="assets/campaign-reference/shared/home-music-player.png" alt="The in-game music player showing the title track" width="240" height="160" loading="lazy"></div>
+              <figcaption>The Music Gallery lets you listen to the soundtrack and see which parts are playing.</figcaption>
+            </figure>
+          </div>
+          <p class="campaign-archive-link"><a class="text-link" href="campaigns/shared/index.html">Explore shared artwork <span aria-hidden="true">↗</span></a></p>
+          <p class="campaign-archive-link"><a class="text-link" href="campaigns/interface/index.html">Browse the Game interface <span aria-hidden="true">↗</span></a></p>
+        </section>
+      </div>
+    </section>
+
+    <section class="section wrap playground-feature" aria-labelledby="playground-title">
+      <div class="section-heading">
+        <p class="eyebrow">Playground</p>
+        <h2 id="playground-title">A different <span class="heading-accent">kind of fight.</span></h2>
+      </div>
+      <div class="campaign-captures playground-captures">
+        <figure class="game-frame showcase-frame stage-frame danmaku-frame">
+          <img src="assets/mgba-danmaku.png" width="240" height="160" loading="lazy" alt="Kasane dodges blue and orange bullet rings over the Danmaku old town">
+          <figcaption>
+            <strong>DANMAKU</strong>
+            <p>Guide <strong>Kasane</strong> through expanding bullet rings in a narrow arena above the old town.</p>
+          </figcaption>
+        </figure>
+        <figure class="game-frame showcase-frame stage-frame invaders-frame">
+          <img src="assets/mgba-invaders-must-die-round-01.png" width="240" height="160" loading="lazy" alt="Astra trades fire with rows of descending enemies against the Milky Way">
+          <figcaption>
+            <strong>INVADERS MUST DIE!</strong>
+            <p>Slide <strong>Astra</strong> across the bottom of the screen and pick off the enemy grid before it reaches you. Later rounds bring in ships from across the campaigns.</p>
+          </figcaption>
+        </figure>
+        <figure class="game-frame showcase-frame stage-frame type-x-frame">
+          <img src="assets/stages/playground/type-x.png" width="240" height="160" loading="lazy" alt="The Interceptor fires rightward as enemies approach through deep space">
+          <figcaption><strong>TYPE X</strong><p>Take Astra into a six-wave side-scrolling fight: weave around incoming enemies and fire forward through deep space.</p></figcaption>
+        </figure>
+        <figure class="game-frame showcase-frame stage-frame dmg-ish-frame">
+          <img src="assets/stages/playground/dmg-ish.png" width="240" height="160" loading="lazy" alt="Astra fires through enemies in a four-shade green playfield">
+          <figcaption><strong>DMG (ISH)</strong><p>Take on a five-minute Neon Frontier throwback, presented in a compact four-shade green palette.</p></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section wrap ship-section" id="ships" aria-labelledby="ships-title">
+      <div class="ship-copy"><p class="eyebrow">Pick your craft</p><h2 id="ships-title">Choose your ship. <span class="heading-accent">Make it yours.</span></h2><p>Choose a campaign ship or take a classic craft into battle. Each ship has its own captain.</p><p>The classic ships trade speed, durability and maximum weapon power in different ways.</p></div>
+      <figure class="ship-visual"><div class="ship-label mono">ASTRA · CLASSIC PRESET</div><img src="assets/mgba-astra-gallery.png" width="240" height="160" loading="lazy" alt="Astra's reference illustration on the in-game Ships Gallery screen"><figcaption>In-game Ships Gallery · <strong>Astra</strong> illustration</figcaption></figure>
+      <div class="ship-roster" aria-label="Ships with high-resolution illustrations and in-game sprites">
+        <article class="ship-card ship-astra">
+          <figure class="ship-illustration">
+            <img src="assets/campaign-reference/shared/astra-ship-illustration.webp" width="358" height="358" loading="lazy" alt="Astra high-resolution ship illustration">
+            <figcaption>HI-RES ILLUSTRATION</figcaption>
+          </figure>
+          <div class="ship-card-info">
+            <div><p class="mono">CLASSIC PRESET</p><h3>Astra</h3></div>
+            <figure class="ship-sprite"><img src="assets/campaign-reference/shared/astra-ship-sprite.png" width="32" height="32" loading="lazy" alt="Astra in-game ship sprite"><figcaption>IN-GAME SPRITE</figcaption></figure>
+          </div>
+        </article>
+        <article class="ship-card ship-kestrel">
+          <figure class="ship-illustration">
+            <img src="assets/campaign-reference/shared/kestrel-ship-illustration.webp" width="358" height="358" loading="lazy" alt="Kestrel high-resolution ship illustration">
+            <figcaption>HI-RES ILLUSTRATION</figcaption>
+          </figure>
+          <div class="ship-card-info">
+            <div><p class="mono">CLASSIC PRESET</p><h3>Kestrel</h3></div>
+            <figure class="ship-sprite"><img src="assets/campaign-reference/shared/kestrel-ship-sprite.png" width="32" height="32" loading="lazy" alt="Kestrel in-game ship sprite"><figcaption>IN-GAME SPRITE</figcaption></figure>
+          </div>
+        </article>
+        <article class="ship-card ship-comet">
+          <figure class="ship-illustration">
+            <img src="assets/campaign-reference/shared/comet-ship-illustration.webp" width="358" height="358" loading="lazy" alt="Comet high-resolution ship illustration">
+            <figcaption>HI-RES ILLUSTRATION</figcaption>
+          </figure>
+          <div class="ship-card-info">
+            <div><p class="mono">CLASSIC PRESET</p><h3>Comet</h3></div>
+            <figure class="ship-sprite"><img src="assets/campaign-reference/shared/comet-ship-sprite.png" width="32" height="32" loading="lazy" alt="Comet in-game ship sprite"><figcaption>IN-GAME SPRITE</figcaption></figure>
+          </div>
+        </article>
+        <article class="ship-card ship-lyra">
+          <figure class="ship-illustration">
+            <img src="assets/campaign-reference/cosmic-convergence/lyra-ship-illustration.webp" width="358" height="358" loading="lazy" alt="Lyra high-resolution ship illustration">
+            <figcaption>HI-RES ILLUSTRATION</figcaption>
+          </figure>
+          <div class="ship-card-info">
+            <div><p class="mono">COSMIC CONVERGENCE</p><h3>Lyra</h3></div>
+            <figure class="ship-sprite"><img src="assets/campaign-reference/cosmic-convergence/lyra-ship-sprite.png" width="32" height="32" loading="lazy" alt="Lyra in-game ship sprite"><figcaption>IN-GAME SPRITE</figcaption></figure>
+          </div>
+        </article>
+        <article class="ship-card ship-vesper">
+          <figure class="ship-illustration">
+            <img src="assets/campaign-reference/strange-horizons/vesper-ship-illustration.webp" width="358" height="358" loading="lazy" alt="Vesper high-resolution ship illustration">
+            <figcaption>HI-RES ILLUSTRATION</figcaption>
+          </figure>
+          <div class="ship-card-info">
+            <div><p class="mono">STRANGE HORIZONS</p><h3>Vesper</h3></div>
+            <figure class="ship-sprite"><img src="assets/campaign-reference/strange-horizons/vesper-ship-sprite.png" width="32" height="32" loading="lazy" alt="Vesper in-game ship sprite"><figcaption>IN-GAME SPRITE</figcaption></figure>
+          </div>
+        </article>
+        <article class="ship-card ship-shrike">
+          <figure class="ship-illustration">
+            <img src="assets/campaign-reference/iron-monsoon/shrike-ship-illustration.webp" width="358" height="358" loading="lazy" alt="Shrike high-resolution ship illustration">
+            <figcaption>HI-RES ILLUSTRATION</figcaption>
+          </figure>
+          <div class="ship-card-info">
+            <div><p class="mono">IRON MONSOON</p><h3>Shrike</h3></div>
+            <figure class="ship-sprite"><img src="assets/campaign-reference/iron-monsoon/shrike-ship-sprite.png" width="32" height="32" loading="lazy" alt="Shrike in-game ship sprite"><figcaption>IN-GAME SPRITE</figcaption></figure>
+          </div>
+        </article>
+        <article class="ship-card ship-classified">
+          <figure class="ship-illustration">
+            <img src="assets/campaign-reference/veiled-contact/classified-ship-illustration.webp" width="358" height="358" loading="lazy" alt="Classified high-resolution ship illustration">
+            <figcaption>HI-RES ILLUSTRATION</figcaption>
+          </figure>
+          <div class="ship-card-info">
+            <div><p class="mono">VEILED CONTACT</p><h3>Classified</h3></div>
+            <figure class="ship-sprite"><img src="assets/campaign-reference/veiled-contact/classified-ship-sprite.png" width="32" height="32" loading="lazy" alt="Classified in-game ship sprite"><figcaption>IN-GAME SPRITE</figcaption></figure>
+          </div>
+        </article>
+        <article class="ship-card ship-bastion">
+          <figure class="ship-illustration">
+            <img src="assets/campaign-reference/clockwork-empire/bastion-ship-illustration.webp" width="358" height="358" loading="lazy" alt="Bastion high-resolution ship illustration">
+            <figcaption>HI-RES ILLUSTRATION</figcaption>
+          </figure>
+          <div class="ship-card-info">
+            <div><p class="mono">CLOCKWORK EMPIRE</p><h3>Bastion</h3></div>
+            <figure class="ship-sprite"><img src="assets/campaign-reference/clockwork-empire/bastion-ship-sprite.png" width="32" height="32" loading="lazy" alt="Bastion in-game ship sprite"><figcaption>IN-GAME SPRITE</figcaption></figure>
+          </div>
+        </article>
+        <article class="ship-card ship-vector">
+          <figure class="ship-illustration">
+            <img src="assets/campaign-reference/console-wars/vector-ship-illustration.webp" width="358" height="358" loading="lazy" alt="Vector high-resolution ship illustration">
+            <figcaption>HI-RES ILLUSTRATION</figcaption>
+          </figure>
+          <div class="ship-card-info">
+            <div><p class="mono">CONSOLE WARS</p><h3>Vector</h3></div>
+            <figure class="ship-sprite"><img src="assets/campaign-reference/console-wars/vector-ship-sprite.png" width="32" height="32" loading="lazy" alt="Vector in-game ship sprite"><figcaption>IN-GAME SPRITE</figcaption></figure>
+          </div>
+        </article>
+        <article class="ship-card ship-volt">
+          <figure class="ship-illustration">
+            <img src="assets/campaign-reference/neon-overdrive/volt-ship-illustration.webp" width="358" height="358" loading="lazy" alt="Volt high-resolution ship illustration">
+            <figcaption>HI-RES ILLUSTRATION</figcaption>
+          </figure>
+          <div class="ship-card-info">
+            <div><p class="mono">NEON OVERDRIVE</p><h3>Volt</h3></div>
+            <figure class="ship-sprite"><img src="assets/campaign-reference/neon-overdrive/volt-ship-sprite.png" width="32" height="32" loading="lazy" alt="Volt in-game ship sprite"><figcaption>IN-GAME SPRITE</figcaption></figure>
+          </div>
+        </article>
+        <article class="ship-card ship-kasane">
+          <figure class="ship-illustration">
+            <img src="assets/campaign-reference/playground/kasane-ship-illustration.webp" width="358" height="358" loading="lazy" alt="Kasane high-resolution ship illustration">
+            <figcaption>HI-RES ILLUSTRATION</figcaption>
+          </figure>
+          <div class="ship-card-info">
+            <div><p class="mono">PLAYGROUND · DANMAKU</p><h3>Kasane</h3></div>
+            <figure class="ship-sprite"><img src="assets/campaign-reference/playground/kasane-ship-sprite.png" width="32" height="32" loading="lazy" alt="Kasane in-game ship sprite"><figcaption>IN-GAME SPRITE</figcaption></figure>
+          </div>
+        </article>
+        <article class="ship-card ship-type-x">
+          <figure class="ship-illustration">
+            <img src="assets/campaign-reference/playground/type-x-ship-illustration.webp" width="800" height="400" loading="lazy" alt="Interceptor high-resolution side-view illustration">
+            <figcaption>HI-RES ILLUSTRATION</figcaption>
+          </figure>
+          <div class="ship-card-info">
+            <div><p class="mono">PLAYGROUND · TYPE X</p><h3>Interceptor</h3></div>
+            <figure class="ship-sprite"><img src="assets/campaign-reference/playground/type-x-ship-sprite.png" width="32" height="16" loading="lazy" alt="Interceptor in-game ship sprite"><figcaption>IN-GAME SPRITE</figcaption></figure>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap weapons-section" id="weapons" aria-labelledby="weapons-title">
+      <div class="section-heading weapon-intro">
+        <p class="eyebrow">Weapons</p>
+        <h2 id="weapons-title">Firepower <span class="heading-accent">in action.</span></h2>
+      </div>
+      <div class="weapon-gallery" aria-label="Distinct weapon attacks shown in live gameplay">
+        <figure class="weapon-shot"><img src="assets/mgba-gravity-lance.png" width="240" height="160" loading="lazy" alt="Astra fires a charged magenta piercing Gravity Lance through enemy crossfire"><figcaption>Gravity Lance · charged piercing shot</figcaption></figure>
+        <figure class="weapon-shot"><img src="assets/mgba-prismatic-veil-vesper-plasma-wave.png" width="240" height="160" loading="lazy" alt="Vesper releases a charged Plasma Wave crescent through the crystal fields"><figcaption>Plasma Wave · charged crescent</figcaption></figure>
+        <figure class="weapon-shot"><img src="assets/mgba-cartridge-bloom.png" width="240" height="160" loading="lazy" alt="Volt releases all five green Cartridge Bloom pellets in a widening fan above the ship"><figcaption>Cartridge Bloom · charged fan</figcaption></figure>
+        <figure class="weapon-shot"><img src="assets/mgba-hyperplay-city-spread-storm.png" width="240" height="160" loading="lazy" alt="Volt fires the wide Spread Storm special through a neon-city wave"><figcaption>Spread Storm · Special</figcaption></figure>
+        <figure class="weapon-shot"><img src="assets/mgba-laser-grid-gameplay.png" width="240" height="160" loading="lazy" alt="Lyra fires the full-height Laser Grid beam through enemy targets"><figcaption>Laser Grid · Special beam</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="craft-section" id="craft">
+        <div class="wrap craft-layout"><div><p class="eyebrow">Made for the machine</p><h2>Pixel by pixel. <span class="heading-accent">Within the hardware.</span></h2><p><strong>Ginga Koro</strong> is designed and built with Codex in C++ using Butano. Every stage, sprite and effect has to fit the Game Boy Advance’s small screen and tight memory limits.</p><p>That constraint shapes the look: crisp native pixels in play, carefully composed scrolling backgrounds, and bullet patterns that remain readable when the screen fills with action.</p></div>
+      </div>
+    </section>
+
+    <section class="closing wrap"><div class="closing-mark">GK<span>·</span></div><div><p class="eyebrow">A 4.10 Games project</p><h2>The next run is yours.</h2><p><strong>Ginga Koro</strong> is an independent work in progress. More stages, more polish, and more to discover as development continues.</p></div><a class="button ghost" href="#top">Back to top ↑</a></section>
+  </main>
+
+</body>
+</html>
