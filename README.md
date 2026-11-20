@@ -1,1 +1,1 @@
-# ginga-koro.github.io
+[https://410-games.github.io/ginga-koro](https://410-games.github.io/ginga-koro)
