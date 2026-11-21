@@ -788,3 +788,137 @@ main h2 .heading-accent {
   .weapon-gallery { grid-template-columns: minmax(0, 1fr); }
   .weapon-shot, .weapon-shot:nth-child(4), .weapon-shot:nth-child(5) { grid-column: auto; }
 }
+
+
+/* Shared full-width divider treatment for every major homepage section. */
+.section-divider {
+  position: relative;
+  isolation: isolate;
+  background: transparent;
+  border: 0;
+}
+
+.section-divider::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0 calc(50% - 50vw);
+  border-top: 1px solid #29415f;
+  background: linear-gradient(
+    180deg,
+    rgba(17, 28, 45, .78) 0%,
+    rgba(17, 28, 45, .5) 22%,
+    rgba(17, 28, 45, .2) 58%,
+    rgba(8, 13, 25, 0) 100%
+  );
+  pointer-events: none;
+}
+
+/* Keep section introductions consistently high, with room for the eyebrow. */
+.campaign-shared-preview .section-heading {
+  margin-bottom: 46px;
+}
+
+.campaign-shared-preview {
+  padding-top: clamp(42px, 5vw, 72px);
+}
+
+/* Match every section label and headline to the Weapons heading rhythm. */
+:is(.section-heading, .enemy-copy, .ship-copy, .craft-layout > div:first-child) > .eyebrow {
+  margin: 0 0 16px;
+}
+
+:is(.section-heading, .enemy-copy, .ship-copy, .craft-layout > div:first-child) > h2 {
+  margin: 0 0 19px;
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1.09;
+  letter-spacing: -.055em;
+}
+
+.packaging-heading {
+  margin-bottom: 46px;
+}
+
+.ship-section {
+  align-items: start;
+  padding-top: clamp(56px, 6vw, 82px);
+}
+
+.weapons-section {
+  padding-top: clamp(42px, 5vw, 72px);
+}
+
+/* Physical-media concepts sit immediately before the hardware section. */
+.packaging-section {
+  padding-block: clamp(64px, 8vw, 104px);
+}
+
+.packaging-section > .wrap > .eyebrow {
+  margin-bottom: 16px;
+}
+
+.packaging-showcase {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.2fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(18px, 3vw, 42px);
+  margin: 0;
+  padding: 24px clamp(16px, 3vw, 36px);
+  border: 1px solid #20334d;
+  border-radius: 10px;
+  background: radial-gradient(ellipse at 50% 100%, #102542 0%, #0a1321 68%);
+}
+
+.packaging-item {
+  min-width: 0;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 270px auto;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.packaging-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 18px 24px #0008);
+}
+
+.packaging-cartridge img {
+  transform: scale(1.08);
+}
+
+.packaging-item figcaption {
+  color: #8fa1ba;
+  font: 9px var(--mono);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 680px) {
+  .packaging-section {
+    padding-block: 48px;
+  }
+
+  .packaging-showcase {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 12px;
+    padding: 16px 12px;
+  }
+
+  .packaging-item {
+    grid-template-rows: 180px auto;
+  }
+
+  .packaging-cartridge {
+    grid-column: 1 / -1;
+  }
+
+  .packaging-cartridge img {
+    width: min(100%, 420px);
+    justify-self: center;
+  }
+}
