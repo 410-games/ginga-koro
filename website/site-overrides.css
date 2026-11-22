@@ -904,17 +904,25 @@ main h2 .heading-accent {
   }
 
   .packaging-showcase {
-    grid-template-columns: 1fr 1fr;
-    gap: 18px 12px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
     padding: 16px 12px;
   }
 
   .packaging-item {
+    width: min(100%, 420px);
+    margin-inline: auto;
     grid-template-rows: 180px auto;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .packaging-item img {
+    width: 100%;
   }
 
   .packaging-cartridge {
-    grid-column: 1 / -1;
+    grid-column: auto;
   }
 
   .packaging-cartridge img {
