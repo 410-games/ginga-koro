@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="site-overrides.css?v=0.1.435">
   <script src="font-toggle.js" defer></script>
+  <script src="gba-mode.js" defer></script>
 </head>
 <body>
   <header class="topbar promo-topbar">
@@ -20,15 +21,15 @@
     </nav>
     <div class="promo-header-end">
       <a class="status status-link" href="development/index.html" aria-label="Read the development timeline"><i></i> IN DEVELOPMENT</a>
-      <button class="font-toggle" type="button" role="switch" aria-checked="false" hidden>Ginga Prism font<span class="font-toggle-track" aria-hidden="true"></span></button>
+      <div class="display-toggles"><button class="font-toggle" type="button" role="switch" aria-checked="false" hidden>Ginga Prism font<span class="font-toggle-track" aria-hidden="true"></span></button><button class="font-toggle gba-mode-toggle" type="button" role="switch" aria-checked="false" hidden>GBA mode<span class="font-toggle-track" aria-hidden="true"></span></button></div>
     </div>
   </header>
 
   <main id="top">
     <section class="hero wrap">
       <div class="hero-copy">
-        <figure class="studio-brand-lockup"><img src="assets/4-10-games-precision-grid-1170.webp" srcset="assets/4-10-games-precision-grid-390.webp 390w, assets/4-10-games-precision-grid-780.webp 780w, assets/4-10-games-precision-grid-1170.webp 1170w" sizes="(max-width: 760px) calc(100vw - 48px), 390px" width="1170" height="495" alt="4.10 Games"></figure>
-        <img class="hero-japanese-wordmark" src="assets/ginga-koro-japanese-wordmark-1290.webp" srcset="assets/ginga-koro-japanese-wordmark-430.webp 430w, assets/ginga-koro-japanese-wordmark-860.webp 860w, assets/ginga-koro-japanese-wordmark-1290.webp 1290w" sizes="(max-width: 760px) calc(100vw - 48px), 430px" width="1290" height="430" alt="銀河航路, the Japanese title of Ginga Koro">
+        <figure class="studio-brand-lockup"><img src="assets/4-10-games-precision-grid-1170.webp" data-gba-src="assets/4-10-games-precision-grid-390-agb001-4x.png" srcset="assets/4-10-games-precision-grid-390.webp 390w, assets/4-10-games-precision-grid-780.webp 780w, assets/4-10-games-precision-grid-1170.webp 1170w" sizes="(max-width: 760px) calc(100vw - 48px), 390px" width="1170" height="495" alt="4.10 Games"></figure>
+        <img class="hero-japanese-wordmark" src="assets/ginga-koro-japanese-wordmark-1290.webp" data-gba-src="assets/ginga-koro-japanese-wordmark-430-agb001-4x.png" srcset="assets/ginga-koro-japanese-wordmark-430.webp 430w, assets/ginga-koro-japanese-wordmark-860.webp 860w, assets/ginga-koro-japanese-wordmark-1290.webp 1290w" sizes="(max-width: 760px) calc(100vw - 48px), 430px" width="1290" height="430" alt="銀河航路, the Japanese title of Ginga Koro">
         <h1>Ginga <em>Koro</em></h1>
         <p class="hero-lede">A new, original shoot-'em-up for Game Boy Advance. Fly through neon cities, coastal defences and deep space. Weave through enemy fire, build your firepower and find an opening.</p>
         <div class="hero-actions">
@@ -50,7 +51,7 @@
       <div class="gameplay-grid">
         <article class="feature">
           <figure class="game-frame">
-            <img src="assets/mgba-sunken-citadel-lyra-crossfire.png" width="240" height="160" loading="lazy" alt="Lyra fires through magenta crossfire as enemy ships close in above the ruins">
+            <img src="assets/mgba-sunken-citadel-lyra-crossfire.png" width="240" height="160" loading="lazy" alt="Lyra fires through magenta crossfire as enemy ships close in above the ruins" data-gba-src="assets/mgba-sunken-citadel-lyra-crossfire-agb001-4x.png">
             <figcaption>COSMIC CONVERGENCE · SUNKEN CITADEL</figcaption>
           </figure>
           <div class="feature-copy">
@@ -60,7 +61,7 @@
         </article>
         <article class="feature">
           <figure class="game-frame">
-            <img src="assets/mgba-rail-burst.png" width="240" height="160" loading="lazy" alt="Shrike fires a charged blue Rail Burst up the causeway">
+            <img src="assets/mgba-rail-burst.png" width="240" height="160" loading="lazy" alt="Shrike fires a charged blue Rail Burst up the causeway" data-gba-src="assets/mgba-rail-burst-agb001-4x.png">
             <figcaption>IRON MONSOON · SURF LINE</figcaption>
           </figure>
           <div class="feature-copy">
@@ -70,7 +71,7 @@
         </article>
         <article class="feature">
           <figure class="game-frame">
-            <img src="assets/mgba-hyperplay-city-spread-storm.png" width="240" height="160" loading="lazy" alt="Volt fires a fan of cyan Spread Storm shots through incoming enemy fire">
+            <img src="assets/mgba-hyperplay-city-spread-storm.png" width="240" height="160" loading="lazy" alt="Volt fires a fan of cyan Spread Storm shots through incoming enemy fire" data-gba-src="assets/mgba-hyperplay-city-spread-storm-agb001-4x.png">
             <figcaption>NEON OVERDRIVE · HYPERPLAY CITY</figcaption>
           </figure>
           <div class="feature-copy">
@@ -84,7 +85,7 @@
     <section class="enemy-section section-divider" aria-labelledby="opposition-title">
       <div class="wrap enemy-layout">
         <figure class="game-frame showcase-frame boss-frame">
-          <img src="assets/mgba-glowspin-park-volt-vortex.png" width="240" height="160" loading="lazy" alt="Volt Vortex sends an expanding ring of magenta bullets across the Ride Core arena">
+          <img src="assets/mgba-glowspin-park-volt-vortex.png" width="240" height="160" loading="lazy" alt="Volt Vortex sends an expanding ring of magenta bullets across the Ride Core arena" data-gba-src="assets/mgba-glowspin-park-volt-vortex-agb001-4x.png">
           <figcaption>VOLT VORTEX · GLOWSPIN PARK</figcaption>
         </figure>
         <div class="enemy-copy">
@@ -94,9 +95,9 @@
         </div>
       </div>
       <div class="wrap enemy-gallery" aria-label="Enemy artwork examples">
-        <figure><img src="assets/enemy-red-ingame.png" loading="lazy" alt="Red Reaver in the Gallery layout"><figcaption><span class="mono">GALLERY ART</span>RED REAVER</figcaption></figure>
-        <figure><img src="assets/enemy-violet-ingame.png" loading="lazy" alt="Violet Hunter in the Gallery layout"><figcaption><span class="mono">GALLERY ART</span>VIOLET HUNTER</figcaption></figure>
-        <figure><img src="assets/enemy-cyan-ingame.png" loading="lazy" alt="Cyan Sentinel in the Gallery layout"><figcaption><span class="mono">GALLERY ART</span>CYAN SENTINEL</figcaption></figure>
+        <figure><img src="assets/enemy-red-ingame.png" loading="lazy" alt="Red Reaver in the Gallery layout" data-gba-src="assets/enemy-red-ingame-agb001-4x.png"><figcaption><span class="mono">GALLERY ART</span>RED REAVER</figcaption></figure>
+        <figure><img src="assets/enemy-violet-ingame.png" loading="lazy" alt="Violet Hunter in the Gallery layout" data-gba-src="assets/enemy-violet-ingame-agb001-4x.png"><figcaption><span class="mono">GALLERY ART</span>VIOLET HUNTER</figcaption></figure>
+        <figure><img src="assets/enemy-cyan-ingame.png" loading="lazy" alt="Cyan Sentinel in the Gallery layout" data-gba-src="assets/enemy-cyan-ingame-agb001-4x.png"><figcaption><span class="mono">GALLERY ART</span>CYAN SENTINEL</figcaption></figure>
         <figure class="enemy-reference"><img src="assets/red-reaver-hero.png" loading="lazy" alt="Red Reaver high-resolution reference illustration"><figcaption><span class="mono">HIGH-RES REFERENCE</span>RED REAVER</figcaption></figure>
       </div>
     </section>
@@ -109,25 +110,25 @@
           <p>Fly between the radar dishes of <strong>Dead Air</strong>, through the crystal formations of <strong>Prismatic Veil</strong> and over the brass machinery of <strong>Clockwork Empire</strong>. Each campaign has its own stages, enemy roster and bosses.</p>
         </div>
         <div class="campaign-captures" aria-label="Campaign gameplay">
-          <figure class="game-frame showcase-frame stage-frame" style="--frame-accent: #ec8de3"><img src="assets/mgba-cosmic-convergence-crimson-nebula-lyra-gravity-lance.png" alt="Lyra fires a charged purple Gravity Lance through enemy ships over Crimson Nebula" width="240" height="160" loading="lazy"><figcaption><span><a href="campaigns/cosmic-convergence/index.html">COSMIC CONVERGENCE</a></span><strong>Crimson Nebula</strong></figcaption></figure>
-          <figure class="game-frame showcase-frame stage-frame" style="--frame-accent: #8ddcff"><img src="assets/mgba-strange-horizons-prismatic-veil-vesper-plasma-wave.png" alt="Vesper fires an orange Plasma Wave through the crystal scenery of Prismatic Veil" width="240" height="160" loading="lazy"><figcaption><span><a href="campaigns/strange-horizons/index.html">STRANGE HORIZONS</a></span><strong>Prismatic Veil</strong></figcaption></figure>
-          <figure class="game-frame showcase-frame stage-frame" style="--frame-accent: #c69cff"><img src="assets/mgba-neon-overdrive-glowspin-park-volt-cartridge-bloom.png" alt="Volt fires five green charged Cartridge Bloom pellets at enemies in Glowspin Park" width="240" height="160" loading="lazy"><figcaption><span><a href="campaigns/neon-overdrive/index.html">NEON OVERDRIVE</a></span><strong>Glowspin Park</strong></figcaption></figure>
-          <figure class="game-frame showcase-frame stage-frame" style="--frame-accent: #f0ca89"><img src="assets/mgba-clockwork-empire-brasswind-dockyard-bastion-gravity-lance.png" alt="Bastion fires a purple Gravity Lance among brass enemy craft in Brasswind Dockyard" width="240" height="160" loading="lazy"><figcaption><span><a href="campaigns/clockwork-empire/index.html">CLOCKWORK EMPIRE</a></span><strong>Brasswind Dockyard</strong></figcaption></figure>
-          <figure class="game-frame showcase-frame stage-frame" style="--frame-accent: #e5b6ed"><img src="assets/mgba-console-wars-cartridge-causeway-vector-rail-burst.png" alt="Vector fires a charged Rail Burst and homing missiles at hardware-themed enemies in Cartridge Causeway" width="240" height="160" loading="lazy"><figcaption><span><a href="campaigns/console-wars/index.html">CONSOLE WARS</a></span><strong>Cartridge Causeway</strong></figcaption></figure>
-          <figure class="game-frame showcase-frame stage-frame" style="--frame-accent: #8bdac7"><img src="assets/mgba-veiled-contact-dead-air-classified-echo-burst.png" alt="Classified fires staggered purple Echo Burst shots through enemy fire in Dead Air" width="240" height="160" loading="lazy"><figcaption><span><a href="campaigns/veiled-contact/index.html">VEILED CONTACT</a></span><strong>Dead Air</strong></figcaption></figure>
-          <figure class="game-frame showcase-frame stage-frame" style="--frame-accent: #e5c48e"><img src="assets/mgba-iron-monsoon-surf-line-shrike-rail-burst.png" alt="Shrike fires a charged Rail Burst amid boats, trucks and aircraft over Surf Line" width="240" height="160" loading="lazy"><figcaption><span><a href="campaigns/iron-monsoon/index.html">IRON MONSOON</a></span><strong>Surf Line</strong></figcaption></figure>
-          <figure class="game-frame showcase-frame stage-frame" style="--frame-accent: #a4acff"><img src="assets/mgba-danmaku-petal-circuit-kasane-rail-burst.png" alt="Kasane fires a charged Rail Burst through purple bullet rings and orange arcs above the Danmaku old town" width="240" height="160" loading="lazy"><figcaption><span><a href="campaigns/playground/index.html">PLAYGROUND</a></span><strong>DANMAKU</strong></figcaption></figure>
+          <figure class="game-frame showcase-frame stage-frame" style="--frame-accent: #ec8de3"><img src="assets/mgba-cosmic-convergence-crimson-nebula-lyra-gravity-lance.png" alt="Lyra fires a charged purple Gravity Lance through enemy ships over Crimson Nebula" width="240" height="160" loading="lazy" data-gba-src="assets/mgba-cosmic-convergence-crimson-nebula-lyra-gravity-lance-agb001-4x.png"><figcaption><span><a href="campaigns/cosmic-convergence/index.html">COSMIC CONVERGENCE</a></span><strong>Crimson Nebula</strong></figcaption></figure>
+          <figure class="game-frame showcase-frame stage-frame" style="--frame-accent: #8ddcff"><img src="assets/mgba-strange-horizons-prismatic-veil-vesper-plasma-wave.png" alt="Vesper fires an orange Plasma Wave through the crystal scenery of Prismatic Veil" width="240" height="160" loading="lazy" data-gba-src="assets/mgba-strange-horizons-prismatic-veil-vesper-plasma-wave-agb001-4x.png"><figcaption><span><a href="campaigns/strange-horizons/index.html">STRANGE HORIZONS</a></span><strong>Prismatic Veil</strong></figcaption></figure>
+          <figure class="game-frame showcase-frame stage-frame" style="--frame-accent: #c69cff"><img src="assets/mgba-neon-overdrive-glowspin-park-volt-cartridge-bloom.png" alt="Volt fires five green charged Cartridge Bloom pellets at enemies in Glowspin Park" width="240" height="160" loading="lazy" data-gba-src="assets/mgba-neon-overdrive-glowspin-park-volt-cartridge-bloom-agb001-4x.png"><figcaption><span><a href="campaigns/neon-overdrive/index.html">NEON OVERDRIVE</a></span><strong>Glowspin Park</strong></figcaption></figure>
+          <figure class="game-frame showcase-frame stage-frame" style="--frame-accent: #f0ca89"><img src="assets/mgba-clockwork-empire-brasswind-dockyard-bastion-gravity-lance.png" alt="Bastion fires a purple Gravity Lance among brass enemy craft in Brasswind Dockyard" width="240" height="160" loading="lazy" data-gba-src="assets/mgba-clockwork-empire-brasswind-dockyard-bastion-gravity-lance-agb001-4x.png"><figcaption><span><a href="campaigns/clockwork-empire/index.html">CLOCKWORK EMPIRE</a></span><strong>Brasswind Dockyard</strong></figcaption></figure>
+          <figure class="game-frame showcase-frame stage-frame" style="--frame-accent: #e5b6ed"><img src="assets/mgba-console-wars-cartridge-causeway-vector-rail-burst.png" alt="Vector fires a charged Rail Burst and homing missiles at hardware-themed enemies in Cartridge Causeway" width="240" height="160" loading="lazy" data-gba-src="assets/mgba-console-wars-cartridge-causeway-vector-rail-burst-agb001-4x.png"><figcaption><span><a href="campaigns/console-wars/index.html">CONSOLE WARS</a></span><strong>Cartridge Causeway</strong></figcaption></figure>
+          <figure class="game-frame showcase-frame stage-frame" style="--frame-accent: #8bdac7"><img src="assets/mgba-veiled-contact-dead-air-classified-echo-burst.png" alt="Classified fires staggered purple Echo Burst shots through enemy fire in Dead Air" width="240" height="160" loading="lazy" data-gba-src="assets/mgba-veiled-contact-dead-air-classified-echo-burst-agb001-4x.png"><figcaption><span><a href="campaigns/veiled-contact/index.html">VEILED CONTACT</a></span><strong>Dead Air</strong></figcaption></figure>
+          <figure class="game-frame showcase-frame stage-frame" style="--frame-accent: #e5c48e"><img src="assets/mgba-iron-monsoon-surf-line-shrike-rail-burst.png" alt="Shrike fires a charged Rail Burst amid boats, trucks and aircraft over Surf Line" width="240" height="160" loading="lazy" data-gba-src="assets/mgba-iron-monsoon-surf-line-shrike-rail-burst-agb001-4x.png"><figcaption><span><a href="campaigns/iron-monsoon/index.html">IRON MONSOON</a></span><strong>Surf Line</strong></figcaption></figure>
+          <figure class="game-frame showcase-frame stage-frame" style="--frame-accent: #a4acff"><img src="assets/mgba-danmaku-petal-circuit-kasane-rail-burst.png" alt="Kasane fires a charged Rail Burst through purple bullet rings and orange arcs above the Danmaku old town" width="240" height="160" loading="lazy" data-gba-src="assets/mgba-danmaku-petal-circuit-kasane-rail-burst-agb001-4x.png"><figcaption><span><a href="campaigns/playground/index.html">PLAYGROUND</a></span><strong>DANMAKU</strong></figcaption></figure>
         </div>
         <h3 class="campaign-roster-title">Explore the roster</h3>
         <div class="campaign-grid" aria-label="Campaign selection artwork">
-          <article class="campaign-card"><div class="campaign-art"><img loading="lazy" width="256" height="256" src="assets/campaign-cosmic.webp" alt="Cosmic Convergence campaign selection artwork"></div><div class="campaign-info"><span class="mono">DEEP SPACE</span><h3><a href="campaigns/cosmic-convergence/index.html">COSMIC CONVERGENCE</a></h3><p>Open-space combat, from <strong>Neon Frontier</strong> to <strong>Final Convergence</strong>.</p></div></article>
-          <article class="campaign-card"><div class="campaign-art"><img loading="lazy" width="256" height="256" src="assets/campaign-strange.webp" alt="Strange Horizons campaign selection artwork"></div><div class="campaign-info"><span class="mono">THE UNKNOWN</span><h3><a href="campaigns/strange-horizons/index.html">STRANGE HORIZONS</a></h3><p>Fly across remote, shifting environments and unfamiliar frontiers.</p></div></article>
-          <article class="campaign-card"><div class="campaign-art"><img loading="lazy" width="256" height="256" src="assets/campaign-neon.webp" alt="Neon Overdrive campaign selection artwork"></div><div class="campaign-info"><span class="mono">ARCADE AFTER DARK</span><h3><a href="campaigns/neon-overdrive/index.html">NEON OVERDRIVE</a></h3><p>Fly through neon streets and amusement parks lit by arcade signs.</p></div></article>
-          <article class="campaign-card"><div class="campaign-art"><img loading="lazy" width="256" height="256" src="assets/campaign-clockwork.webp" alt="Clockwork Empire campaign selection artwork"></div><div class="campaign-info"><span class="mono">MECHANICAL WORLDS</span><h3><a href="campaigns/clockwork-empire/index.html">CLOCKWORK EMPIRE</a></h3><p>Thread through brass dockyards, mechanical estates and deep industrial shafts.</p></div></article>
-          <article class="campaign-card"><div class="campaign-art"><img loading="lazy" width="256" height="256" src="assets/campaign-console.webp" alt="Console Wars campaign selection artwork"></div><div class="campaign-info"><span class="mono">RETRO HARDWARE</span><h3><a href="campaigns/console-wars/index.html">CONSOLE WARS</a></h3><p>Fly over pixel art inspired by different eras of home and arcade hardware.</p></div></article>
-          <article class="campaign-card"><div class="campaign-art"><img loading="lazy" width="256" height="256" src="assets/campaign-veiled.webp" alt="Veiled Contact campaign selection artwork"></div><div class="campaign-info"><span class="mono">SIGNALS &amp; SHADOWS</span><h3><a href="campaigns/veiled-contact/index.html">VEILED CONTACT</a></h3><p>Fly through surveillance stations and shadowed machinery.</p></div></article>
-          <article class="campaign-card"><div class="campaign-art"><img loading="lazy" width="256" height="256" src="assets/campaign-iron.webp" alt="Iron Monsoon campaign selection artwork"></div><div class="campaign-info"><span class="mono">INDUSTRIAL WARFARE</span><h3><a href="campaigns/iron-monsoon/index.html">IRON MONSOON</a></h3><p>Fly over coastal roads, rail lines and industrial fortifications.</p></div></article>
-          <article class="campaign-card playground-card"><div class="campaign-art"><img loading="lazy" width="256" height="256" src="assets/campaign-playground.webp" alt="Playground campaign selection artwork"></div><div class="campaign-info"><span class="mono">MODES &amp; EXPERIMENTS</span><h3><a href="campaigns/playground/index.html">PLAYGROUND</a></h3><p>Try <strong>Danmaku</strong>’s bullet curtains and the descending enemy formations of <strong>Invaders Must Die!</strong></p></div></article>
+          <article class="campaign-card"><div class="campaign-art"><img loading="lazy" width="256" height="256" src="assets/campaign-cosmic.webp" alt="Cosmic Convergence campaign selection artwork" data-gba-src="assets/campaign-cosmic-agb001-4x.png"></div><div class="campaign-info"><span class="mono">DEEP SPACE</span><h3><a href="campaigns/cosmic-convergence/index.html">COSMIC CONVERGENCE</a></h3><p>Open-space combat, from <strong>Neon Frontier</strong> to <strong>Final Convergence</strong>.</p></div></article>
+          <article class="campaign-card"><div class="campaign-art"><img loading="lazy" width="256" height="256" src="assets/campaign-strange.webp" alt="Strange Horizons campaign selection artwork" data-gba-src="assets/campaign-strange-agb001-4x.png"></div><div class="campaign-info"><span class="mono">THE UNKNOWN</span><h3><a href="campaigns/strange-horizons/index.html">STRANGE HORIZONS</a></h3><p>Fly across remote, shifting environments and unfamiliar frontiers.</p></div></article>
+          <article class="campaign-card"><div class="campaign-art"><img loading="lazy" width="256" height="256" src="assets/campaign-neon.webp" alt="Neon Overdrive campaign selection artwork" data-gba-src="assets/campaign-neon-agb001-4x.png"></div><div class="campaign-info"><span class="mono">ARCADE AFTER DARK</span><h3><a href="campaigns/neon-overdrive/index.html">NEON OVERDRIVE</a></h3><p>Fly through neon streets and amusement parks lit by arcade signs.</p></div></article>
+          <article class="campaign-card"><div class="campaign-art"><img loading="lazy" width="256" height="256" src="assets/campaign-clockwork.webp" alt="Clockwork Empire campaign selection artwork" data-gba-src="assets/campaign-clockwork-agb001-4x.png"></div><div class="campaign-info"><span class="mono">MECHANICAL WORLDS</span><h3><a href="campaigns/clockwork-empire/index.html">CLOCKWORK EMPIRE</a></h3><p>Thread through brass dockyards, mechanical estates and deep industrial shafts.</p></div></article>
+          <article class="campaign-card"><div class="campaign-art"><img loading="lazy" width="256" height="256" src="assets/campaign-console.webp" alt="Console Wars campaign selection artwork" data-gba-src="assets/campaign-console-agb001-4x.png"></div><div class="campaign-info"><span class="mono">RETRO HARDWARE</span><h3><a href="campaigns/console-wars/index.html">CONSOLE WARS</a></h3><p>Fly over pixel art inspired by different eras of home and arcade hardware.</p></div></article>
+          <article class="campaign-card"><div class="campaign-art"><img loading="lazy" width="256" height="256" src="assets/campaign-veiled.webp" alt="Veiled Contact campaign selection artwork" data-gba-src="assets/campaign-veiled-agb001-4x.png"></div><div class="campaign-info"><span class="mono">SIGNALS &amp; SHADOWS</span><h3><a href="campaigns/veiled-contact/index.html">VEILED CONTACT</a></h3><p>Fly through surveillance stations and shadowed machinery.</p></div></article>
+          <article class="campaign-card"><div class="campaign-art"><img loading="lazy" width="256" height="256" src="assets/campaign-iron.webp" alt="Iron Monsoon campaign selection artwork" data-gba-src="assets/campaign-iron-agb001-4x.png"></div><div class="campaign-info"><span class="mono">INDUSTRIAL WARFARE</span><h3><a href="campaigns/iron-monsoon/index.html">IRON MONSOON</a></h3><p>Fly over coastal roads, rail lines and industrial fortifications.</p></div></article>
+          <article class="campaign-card playground-card"><div class="campaign-art"><img loading="lazy" width="256" height="256" src="assets/campaign-playground.webp" alt="Playground campaign selection artwork" data-gba-src="assets/campaign-playground-agb001-4x.png"></div><div class="campaign-info"><span class="mono">MODES &amp; EXPERIMENTS</span><h3><a href="campaigns/playground/index.html">PLAYGROUND</a></h3><p>Try <strong>Danmaku</strong>’s bullet curtains and the descending enemy formations of <strong>Invaders Must Die!</strong></p></div></article>
         </div>
         <section class="campaign-shared-preview section-divider" aria-labelledby="shared-preview-title">
           <div class="section-heading">
@@ -142,7 +143,7 @@
               <figcaption><strong>Ginga Prism</strong> is the custom pixel font used in the game’s menus and HUD.</figcaption>
             </figure>
             <figure>
-              <div class="shared-preview-image"><img src="assets/campaign-reference/shared/home-music-player.png?v=0.1.434" alt="The in-game music player showing the title track" width="240" height="160" loading="lazy"></div>
+              <div class="shared-preview-image"><img src="assets/campaign-reference/shared/home-music-player.png?v=0.1.434" alt="The in-game music player showing the title track" width="240" height="160" loading="lazy" data-gba-src="assets/campaign-reference/shared/home-music-player-agb001-4x.png?v=0.1.434"></div>
               <figcaption>The Music Gallery lets you listen to the soundtrack and see which parts are playing.</figcaption>
             </figure>
           </div>
@@ -159,25 +160,25 @@
       </div>
       <div class="campaign-captures playground-captures">
         <figure class="game-frame showcase-frame stage-frame danmaku-frame">
-          <img src="assets/mgba-danmaku-petal-circuit-kasane-rail-burst.png" width="240" height="160" loading="lazy" alt="Kasane fires a charged Rail Burst through purple bullet rings and orange arcs above the Danmaku old town">
+          <img src="assets/mgba-danmaku-petal-circuit-kasane-rail-burst.png" width="240" height="160" loading="lazy" alt="Kasane fires a charged Rail Burst through purple bullet rings and orange arcs above the Danmaku old town" data-gba-src="assets/mgba-danmaku-petal-circuit-kasane-rail-burst-agb001-4x.png">
           <figcaption>
             <strong>DANMAKU</strong>
             <p>Guide <strong>Kasane</strong> through expanding bullet rings in a narrow arena above the old town.</p>
           </figcaption>
         </figure>
         <figure class="game-frame showcase-frame stage-frame invaders-frame">
-          <img src="assets/mgba-invaders-must-die-round-01.png" width="240" height="160" loading="lazy" alt="Astra trades fire with rows of descending enemies against the Milky Way">
+          <img src="assets/mgba-invaders-must-die-round-01.png" width="240" height="160" loading="lazy" alt="Astra trades fire with rows of descending enemies against the Milky Way" data-gba-src="assets/mgba-invaders-must-die-round-01-agb001-4x.png">
           <figcaption>
             <strong>INVADERS MUST DIE!</strong>
             <p>Slide <strong>Astra</strong> across the bottom of the screen and pick off the enemy grid before it reaches you. Later rounds bring in ships from across the campaigns.</p>
           </figcaption>
         </figure>
         <figure class="game-frame showcase-frame stage-frame type-x-frame">
-          <img src="assets/stages/playground/type-x.png" width="240" height="160" loading="lazy" alt="The Interceptor fires rightward as enemies approach through deep space">
+          <img src="assets/stages/playground/type-x.png" width="240" height="160" loading="lazy" alt="The Interceptor fires rightward as enemies approach through deep space" data-gba-src="assets/stages/playground/type-x-agb001-4x.png">
           <figcaption><strong>TYPE X</strong><p>Take Astra into a 100-wave side-scrolling fight: weave around incoming enemies and fire forward through deep space.</p></figcaption>
         </figure>
         <figure class="game-frame showcase-frame stage-frame dmg-ish-frame">
-          <img src="assets/stages/playground/dmg-ish.png" width="240" height="160" loading="lazy" alt="Astra fires through enemies in a four-shade green playfield">
+          <img src="assets/stages/playground/dmg-ish.png" width="240" height="160" loading="lazy" alt="Astra fires through enemies in a four-shade green playfield" data-gba-src="assets/stages/playground/dmg-ish-agb001-4x.png">
           <figcaption><strong>DMG (ISH)</strong><p>Take on a five-minute Neon Frontier throwback, presented in a compact four-shade green palette.</p></figcaption>
         </figure>
       </div>
@@ -185,7 +186,7 @@
 
     <section class="section wrap ship-section section-divider" id="ships" aria-labelledby="ships-title">
       <div class="ship-copy"><p class="eyebrow">Pick your craft</p><h2 id="ships-title">Choose your ship. <span class="heading-accent">Make it yours.</span></h2><p>Choose a campaign ship or take a classic craft into battle. Each ship has its own captain.</p><p>The classic ships trade speed, durability and maximum weapon power in different ways.</p></div>
-      <figure class="ship-visual"><div class="ship-label mono">ASTRA · CLASSIC PRESET</div><img src="assets/mgba-astra-gallery.png" width="240" height="160" loading="lazy" alt="Astra's reference illustration on the in-game Ships Gallery screen"><figcaption>In-game Ships Gallery · <strong>Astra</strong> illustration</figcaption></figure>
+      <figure class="ship-visual"><div class="ship-label mono">ASTRA · CLASSIC PRESET</div><img src="assets/mgba-astra-gallery.png" width="240" height="160" loading="lazy" alt="Astra's reference illustration on the in-game Ships Gallery screen" data-gba-src="assets/mgba-astra-gallery-agb001-4x.png"><figcaption>In-game Ships Gallery · <strong>Astra</strong> illustration</figcaption></figure>
       <div class="ship-roster" aria-label="Ships with high-resolution illustrations and in-game sprites">
         <article class="ship-card ship-astra">
           <figure class="ship-illustration">
@@ -194,7 +195,7 @@
           </figure>
           <div class="ship-card-info">
             <div><p class="mono">CLASSIC PRESET</p><h3>Astra</h3></div>
-            <figure class="ship-sprite"><img src="assets/campaign-reference/shared/astra-ship-sprite.png" width="32" height="32" loading="lazy" alt="Astra in-game ship sprite"><figcaption>IN-GAME SPRITE</figcaption></figure>
+            <figure class="ship-sprite"><img src="assets/campaign-reference/shared/astra-ship-sprite.png" width="32" height="32" loading="lazy" alt="Astra in-game ship sprite" data-gba-src="assets/campaign-reference/shared/astra-ship-sprite-agb001-4x.png"><figcaption>IN-GAME SPRITE</figcaption></figure>
           </div>
         </article>
         <article class="ship-card ship-kestrel">
@@ -204,7 +205,7 @@
           </figure>
           <div class="ship-card-info">
             <div><p class="mono">CLASSIC PRESET</p><h3>Kestrel</h3></div>
-            <figure class="ship-sprite"><img src="assets/campaign-reference/shared/kestrel-ship-sprite.png" width="32" height="32" loading="lazy" alt="Kestrel in-game ship sprite"><figcaption>IN-GAME SPRITE</figcaption></figure>
+            <figure class="ship-sprite"><img src="assets/campaign-reference/shared/kestrel-ship-sprite.png" width="32" height="32" loading="lazy" alt="Kestrel in-game ship sprite" data-gba-src="assets/campaign-reference/shared/kestrel-ship-sprite-agb001-4x.png"><figcaption>IN-GAME SPRITE</figcaption></figure>
           </div>
         </article>
         <article class="ship-card ship-comet">
@@ -214,7 +215,7 @@
           </figure>
           <div class="ship-card-info">
             <div><p class="mono">CLASSIC PRESET</p><h3>Comet</h3></div>
-            <figure class="ship-sprite"><img src="assets/campaign-reference/shared/comet-ship-sprite.png" width="32" height="32" loading="lazy" alt="Comet in-game ship sprite"><figcaption>IN-GAME SPRITE</figcaption></figure>
+            <figure class="ship-sprite"><img src="assets/campaign-reference/shared/comet-ship-sprite.png" width="32" height="32" loading="lazy" alt="Comet in-game ship sprite" data-gba-src="assets/campaign-reference/shared/comet-ship-sprite-agb001-4x.png"><figcaption>IN-GAME SPRITE</figcaption></figure>
           </div>
         </article>
         <article class="ship-card ship-lyra">
@@ -224,7 +225,7 @@
           </figure>
           <div class="ship-card-info">
             <div><p class="mono">COSMIC CONVERGENCE</p><h3>Lyra</h3></div>
-            <figure class="ship-sprite"><img src="assets/campaign-reference/cosmic-convergence/lyra-ship-sprite.png" width="32" height="32" loading="lazy" alt="Lyra in-game ship sprite"><figcaption>IN-GAME SPRITE</figcaption></figure>
+            <figure class="ship-sprite"><img src="assets/campaign-reference/cosmic-convergence/lyra-ship-sprite.png" width="32" height="32" loading="lazy" alt="Lyra in-game ship sprite" data-gba-src="assets/campaign-reference/cosmic-convergence/lyra-ship-sprite-agb001-4x.png"><figcaption>IN-GAME SPRITE</figcaption></figure>
           </div>
         </article>
         <article class="ship-card ship-vesper">
@@ -234,7 +235,7 @@
           </figure>
           <div class="ship-card-info">
             <div><p class="mono">STRANGE HORIZONS</p><h3>Vesper</h3></div>
-            <figure class="ship-sprite"><img src="assets/campaign-reference/strange-horizons/vesper-ship-sprite.png" width="32" height="32" loading="lazy" alt="Vesper in-game ship sprite"><figcaption>IN-GAME SPRITE</figcaption></figure>
+            <figure class="ship-sprite"><img src="assets/campaign-reference/strange-horizons/vesper-ship-sprite.png" width="32" height="32" loading="lazy" alt="Vesper in-game ship sprite" data-gba-src="assets/campaign-reference/strange-horizons/vesper-ship-sprite-agb001-4x.png"><figcaption>IN-GAME SPRITE</figcaption></figure>
           </div>
         </article>
         <article class="ship-card ship-shrike">
@@ -244,7 +245,7 @@
           </figure>
           <div class="ship-card-info">
             <div><p class="mono">IRON MONSOON</p><h3>Shrike</h3></div>
-            <figure class="ship-sprite"><img src="assets/campaign-reference/iron-monsoon/shrike-ship-sprite.png" width="32" height="32" loading="lazy" alt="Shrike in-game ship sprite"><figcaption>IN-GAME SPRITE</figcaption></figure>
+            <figure class="ship-sprite"><img src="assets/campaign-reference/iron-monsoon/shrike-ship-sprite.png" width="32" height="32" loading="lazy" alt="Shrike in-game ship sprite" data-gba-src="assets/campaign-reference/iron-monsoon/shrike-ship-sprite-agb001-4x.png"><figcaption>IN-GAME SPRITE</figcaption></figure>
           </div>
         </article>
         <article class="ship-card ship-classified">
@@ -254,7 +255,7 @@
           </figure>
           <div class="ship-card-info">
             <div><p class="mono">VEILED CONTACT</p><h3>Classified</h3></div>
-            <figure class="ship-sprite"><img src="assets/campaign-reference/veiled-contact/classified-ship-sprite.png" width="32" height="32" loading="lazy" alt="Classified in-game ship sprite"><figcaption>IN-GAME SPRITE</figcaption></figure>
+            <figure class="ship-sprite"><img src="assets/campaign-reference/veiled-contact/classified-ship-sprite.png" width="32" height="32" loading="lazy" alt="Classified in-game ship sprite" data-gba-src="assets/campaign-reference/veiled-contact/classified-ship-sprite-agb001-4x.png"><figcaption>IN-GAME SPRITE</figcaption></figure>
           </div>
         </article>
         <article class="ship-card ship-bastion">
@@ -264,7 +265,7 @@
           </figure>
           <div class="ship-card-info">
             <div><p class="mono">CLOCKWORK EMPIRE</p><h3>Bastion</h3></div>
-            <figure class="ship-sprite"><img src="assets/campaign-reference/clockwork-empire/bastion-ship-sprite.png" width="32" height="32" loading="lazy" alt="Bastion in-game ship sprite"><figcaption>IN-GAME SPRITE</figcaption></figure>
+            <figure class="ship-sprite"><img src="assets/campaign-reference/clockwork-empire/bastion-ship-sprite.png" width="32" height="32" loading="lazy" alt="Bastion in-game ship sprite" data-gba-src="assets/campaign-reference/clockwork-empire/bastion-ship-sprite-agb001-4x.png"><figcaption>IN-GAME SPRITE</figcaption></figure>
           </div>
         </article>
         <article class="ship-card ship-vector">
@@ -274,7 +275,7 @@
           </figure>
           <div class="ship-card-info">
             <div><p class="mono">CONSOLE WARS</p><h3>Vector</h3></div>
-            <figure class="ship-sprite"><img src="assets/campaign-reference/console-wars/vector-ship-sprite.png" width="32" height="32" loading="lazy" alt="Vector in-game ship sprite"><figcaption>IN-GAME SPRITE</figcaption></figure>
+            <figure class="ship-sprite"><img src="assets/campaign-reference/console-wars/vector-ship-sprite.png" width="32" height="32" loading="lazy" alt="Vector in-game ship sprite" data-gba-src="assets/campaign-reference/console-wars/vector-ship-sprite-agb001-4x.png"><figcaption>IN-GAME SPRITE</figcaption></figure>
           </div>
         </article>
         <article class="ship-card ship-volt">
@@ -284,7 +285,7 @@
           </figure>
           <div class="ship-card-info">
             <div><p class="mono">NEON OVERDRIVE</p><h3>Volt</h3></div>
-            <figure class="ship-sprite"><img src="assets/campaign-reference/neon-overdrive/volt-ship-sprite.png" width="32" height="32" loading="lazy" alt="Volt in-game ship sprite"><figcaption>IN-GAME SPRITE</figcaption></figure>
+            <figure class="ship-sprite"><img src="assets/campaign-reference/neon-overdrive/volt-ship-sprite.png" width="32" height="32" loading="lazy" alt="Volt in-game ship sprite" data-gba-src="assets/campaign-reference/neon-overdrive/volt-ship-sprite-agb001-4x.png"><figcaption>IN-GAME SPRITE</figcaption></figure>
           </div>
         </article>
         <article class="ship-card ship-kasane">
@@ -294,7 +295,7 @@
           </figure>
           <div class="ship-card-info">
             <div><p class="mono">PLAYGROUND · DANMAKU</p><h3>Kasane</h3></div>
-            <figure class="ship-sprite"><img src="assets/campaign-reference/playground/kasane-ship-sprite.png" width="32" height="32" loading="lazy" alt="Kasane in-game ship sprite"><figcaption>IN-GAME SPRITE</figcaption></figure>
+            <figure class="ship-sprite"><img src="assets/campaign-reference/playground/kasane-ship-sprite.png" width="32" height="32" loading="lazy" alt="Kasane in-game ship sprite" data-gba-src="assets/campaign-reference/playground/kasane-ship-sprite-agb001-4x.png"><figcaption>IN-GAME SPRITE</figcaption></figure>
           </div>
         </article>
         <article class="ship-card ship-type-x">
@@ -304,7 +305,7 @@
           </figure>
           <div class="ship-card-info">
             <div><p class="mono">PLAYGROUND · TYPE X</p><h3>Interceptor</h3></div>
-            <figure class="ship-sprite"><img src="assets/campaign-reference/playground/type-x-ship-sprite.png" width="32" height="16" loading="lazy" alt="Interceptor in-game ship sprite"><figcaption>IN-GAME SPRITE</figcaption></figure>
+            <figure class="ship-sprite"><img src="assets/campaign-reference/playground/type-x-ship-sprite.png" width="32" height="16" loading="lazy" alt="Interceptor in-game ship sprite" data-gba-src="assets/campaign-reference/playground/type-x-ship-sprite-agb001-4x.png"><figcaption>IN-GAME SPRITE</figcaption></figure>
           </div>
         </article>
       </div>
@@ -316,11 +317,11 @@
         <h2 id="weapons-title">Firepower <span class="heading-accent">in action.</span></h2>
       </div>
       <div class="weapon-gallery" aria-label="Distinct weapon attacks shown in live gameplay">
-        <figure class="weapon-shot"><img src="assets/mgba-gravity-lance.png" width="240" height="160" loading="lazy" alt="Astra fires a charged magenta piercing Gravity Lance through enemy crossfire"><figcaption>Gravity Lance · charged piercing shot</figcaption></figure>
-        <figure class="weapon-shot"><img src="assets/mgba-prismatic-veil-vesper-plasma-wave.png" width="240" height="160" loading="lazy" alt="Vesper releases a charged Plasma Wave crescent through the crystal fields"><figcaption>Plasma Wave · charged crescent</figcaption></figure>
-        <figure class="weapon-shot"><img src="assets/mgba-cartridge-bloom.png" width="240" height="160" loading="lazy" alt="Volt releases all five green Cartridge Bloom pellets in a widening fan above the ship"><figcaption>Cartridge Bloom · charged fan</figcaption></figure>
-        <figure class="weapon-shot"><img src="assets/mgba-hyperplay-city-spread-storm.png" width="240" height="160" loading="lazy" alt="Volt fires the wide Spread Storm special through a neon-city wave"><figcaption>Spread Storm · Special</figcaption></figure>
-        <figure class="weapon-shot"><img src="assets/mgba-laser-grid-gameplay.png" width="240" height="160" loading="lazy" alt="A full-height Laser Grid Special beam fills the centre of a live gameplay screen"><figcaption>Laser Grid · Special beam</figcaption></figure>
+        <figure class="weapon-shot"><img src="assets/mgba-gravity-lance.png" width="240" height="160" loading="lazy" alt="Astra fires a charged magenta piercing Gravity Lance through enemy crossfire" data-gba-src="assets/mgba-gravity-lance-agb001-4x.png"><figcaption>Gravity Lance · charged piercing shot</figcaption></figure>
+        <figure class="weapon-shot"><img src="assets/mgba-prismatic-veil-vesper-plasma-wave.png" width="240" height="160" loading="lazy" alt="Vesper releases a charged Plasma Wave crescent through the crystal fields" data-gba-src="assets/mgba-prismatic-veil-vesper-plasma-wave-agb001-4x.png"><figcaption>Plasma Wave · charged crescent</figcaption></figure>
+        <figure class="weapon-shot"><img src="assets/mgba-cartridge-bloom.png" width="240" height="160" loading="lazy" alt="Volt releases all five green Cartridge Bloom pellets in a widening fan above the ship" data-gba-src="assets/mgba-cartridge-bloom-agb001-4x.png"><figcaption>Cartridge Bloom · charged fan</figcaption></figure>
+        <figure class="weapon-shot"><img src="assets/mgba-hyperplay-city-spread-storm.png" width="240" height="160" loading="lazy" alt="Volt fires the wide Spread Storm special through a neon-city wave" data-gba-src="assets/mgba-hyperplay-city-spread-storm-agb001-4x.png"><figcaption>Spread Storm · Special</figcaption></figure>
+        <figure class="weapon-shot"><img src="assets/mgba-laser-grid-gameplay.png" width="240" height="160" loading="lazy" alt="A full-height Laser Grid Special beam fills the centre of a live gameplay screen" data-gba-src="assets/mgba-laser-grid-gameplay-agb001-4x.png"><figcaption>Laser Grid · Special beam</figcaption></figure>
       </div>
     </section>
 
