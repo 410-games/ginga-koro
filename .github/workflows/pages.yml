@@ -49,6 +49,8 @@ jobs:
           done
           echo "Pages artifact metadata did not become visible."
           exit 1
+      - name: Allow Pages deployment index to settle
+        run: sleep 15
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
