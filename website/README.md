@@ -58,6 +58,6 @@ The [full capture inventory](../docs/PROMO_STAGE_CAPTURES.md) records thirty-sev
 
 ## Development timeline
 
-The homepage’s **IN DEVELOPMENT** badge links to [the dated development timeline](development/index.html), a concise public-facing summary of major game, encyclopedia and promotional-site deliverables. The detailed project history remains in `docs/DEVELOPMENT_TIMELINE.md`.
+The dated development timeline at `development/index.html` is a concise public-facing summary of major game, encyclopedia and promotional-site deliverables. Its direct URL remains available, but it is intentionally omitted from site navigation. The detailed project history remains in `docs/DEVELOPMENT_TIMELINE.md`.
 
 Campaign music sections now include a small keyboard-accessible play/pause control. The eight page previews use compact 16 kHz mono WAV renders derived from the original tracker music; these are browser listening previews and can sound different from the GBA mix. Audio is requested only after the visitor presses Play. Regenerate them on macOS with python3 -B tools/generate_promo_music_previews.py.

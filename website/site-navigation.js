@@ -17,7 +17,6 @@
     { label: "The craft", href: `${home}#craft`, section: "craft" },
     { label: "Shared art", href: `${root}campaigns/shared/index.html`, page: isShared },
     { label: "Interface", href: `${root}campaigns/interface/index.html`, page: isInterface },
-    { label: "Development", href: `${root}development/index.html`, page: isDevelopment },
   ];
 
   nav.replaceChildren(...pages.map(({ label, href, section, page }) => {
